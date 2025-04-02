@@ -1,4 +1,5 @@
 import "./App.css";
+import DownloadinScreen from "./DownloadinScreen";
 import ProgressBar from "./ProgressBar";
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
         {percentages.map((percent) => (
           <ProgressBar key={percent} progress={percent} />
         ))}
+      </div>
+      <div>
+        <DownloadinScreen />
       </div>
     </>
   );
